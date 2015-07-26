@@ -1,0 +1,36 @@
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Test\bin\Debug\Test.dll.config
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Test\bin\Debug\Test.dll
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Test\bin\Debug\Test.pdb
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Test\bin\Debug\DAL.dll
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Test\bin\Debug\Model.dll
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Test\bin\Debug\Utility.dll
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Test\bin\Debug\DAL.pdb
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Test\bin\Debug\Model.pdb
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Test\bin\Debug\Utility.pdb
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Test\obj\Debug\Test.dll
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Test\obj\Debug\Test.pdb
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Test\bin\Debug\Test.dll.config
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Test\bin\Debug\Test.dll
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Test\bin\Debug\Test.pdb
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Test\bin\Debug\DAL.dll
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Test\bin\Debug\Model.dll
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Test\bin\Debug\Utility.dll
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Test\bin\Debug\DAL.pdb
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Test\bin\Debug\Model.pdb
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Test\bin\Debug\Utility.pdb
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Test\obj\Debug\Test.dll
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Test\obj\Debug\Test.pdb
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Test\bin\Debug\Test.dll.config
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Test\bin\Debug\Test.dll
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Test\bin\Debug\Test.pdb
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Test\bin\Debug\DAL.dll
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Test\bin\Debug\Model.dll
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Test\bin\Debug\Utility.dll
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Test\bin\Debug\DAL.pdb
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Test\bin\Debug\Model.pdb
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Test\bin\Debug\Utility.pdb
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Test\obj\Debug\Test.dll
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Test\obj\Debug\Test.pdb

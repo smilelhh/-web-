@@ -1,0 +1,890 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D7A78E94-F82F-47D3-A9C8-D7175CDF49BC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web</RootNamespace>
+    <AssemblyName>Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager">
+      <HintPath>C:\Users\i-leixl\Downloads\AspNetPager745DLL\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="alertPassword.aspx" />
+    <Content Include="classTeacherManPages\attendanceDetail.aspx" />
+    <Content Include="classTeacherManPages\attendanceStatistics.aspx" />
+    <Content Include="classTeacherManPages\averageWeeklyAttendance.aspx" />
+    <Content Include="classTeacherManPages\classStudentAttendDetail.aspx" />
+    <Content Include="classTeacherManPages\classWeekAttendance.aspx" />
+    <Content Include="classTeacherManPages\viewDetailedAttendanceInformation.aspx" />
+    <Content Include="css\showCommon.css" />
+    <Content Include="css\header.css" />
+    <Content Include="css\index.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\menu.css" />
+    <Content Include="css\manCommon.css" />
+    <Content Include="images\add.gif" />
+    <Content Include="images\back.jpg" />
+    <Content Include="images\buttom_bgs.gif" />
+    <Content Include="images\buttom_left2.gif" />
+    <Content Include="images\buttom_right2.gif" />
+    <Content Include="images\content-bg.gif" />
+    <Content Include="images\delete.gif" />
+    <Content Include="images\edit.gif" />
+    <Content Include="images\excel.jpg" />
+    <Content Include="images\left-top-right.gif" />
+    <Content Include="images\login-content-bg.gif" />
+    <Content Include="images\login-top-bg.gif" />
+    <Content Include="images\login-wel.gif" />
+    <Content Include="images\login_bg.jpg" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\luck.gif" />
+    <Content Include="images\mail_leftbg.gif" />
+    <Content Include="images\mail_rightbg.gif" />
+    <Content Include="images\menu_bg1.gif" />
+    <Content Include="images\menu_bg2.gif" />
+    <Content Include="images\menu_bgs.gif" />
+    <Content Include="images\menu_topline.gif" />
+    <Content Include="images\nav-right-bg.gif" />
+    <Content Include="images\out.gif" />
+    <Content Include="images\submit.jpg" />
+    <Content Include="images\top-right.gif" />
+    <Content Include="images\top_bt.jpg" />
+    <Content Include="images\welcome.jpg" />
+    <Content Include="js\moo.fx.js" />
+    <Content Include="js\moo.fx.pack.js" />
+    <Content Include="js\prototype.lite.js" />
+    <Content Include="login.aspx" />
+    <Content Include="mainPages\welcome.aspx" />
+    <Content Include="MaintainStaffManPages\monitorAttendance\attendanceStatistics.aspx" />
+    <Content Include="MaintainStaffManPages\monitorAttendance\increaseStudentAttendanceRecords.aspx" />
+    <Content Include="MaintainStaffManPages\monitorAttendance\manageAttendanceRecord.aspx" />
+    <Content Include="MaintainStaffManPages\monitorAttendance\modifyStudentAttendanceRecord.aspx" />
+    <Content Include="MaintainStaffManPages\teacherAttendance\attendanceStatistics.aspx" />
+    <Content Include="MaintainStaffManPages\teacherAttendance\increaseStudentAttendanceRecords.aspx" />
+    <Content Include="MaintainStaffManPages\teacherAttendance\manageAttendanceRecord.aspx" />
+    <Content Include="MaintainStaffManPages\teacherAttendance\modifyStudentAttendanceRecord.aspx" />
+    <Content Include="managerManPages\initAttendance.aspx" />
+    <Content Include="managerManPages\initSemesterDate.aspx" />
+    <Content Include="managerManPages\manageClasses\addClass.aspx" />
+    <Content Include="managerManPages\manageClasses\editClass.aspx" />
+    <Content Include="managerManPages\manageClasses\showClasses.aspx" />
+    <Content Include="managerManPages\manageCourses\addCourse.aspx" />
+    <Content Include="managerManPages\manageCourses\editCourse.aspx" />
+    <Content Include="managerManPages\manageCourses\showCourses.aspx" />
+    <Content Include="managerManPages\manageCourseTable\addCourseTable.aspx" />
+    <Content Include="managerManPages\manageCourseTable\showDetailCourseTable.aspx" />
+    <Content Include="managerManPages\manageCourseTable\editCourseTable.aspx" />
+    <Content Include="managerManPages\manageCourseTable\showCourseTable.aspx" />
+    <Content Include="managerManPages\manageStaffs\addStaff.aspx" />
+    <Content Include="managerManPages\manageStaffs\editStaff.aspx" />
+    <Content Include="managerManPages\manageStaffs\showStaffs.aspx" />
+    <Content Include="managerManPages\manageStudents\addStudent.aspx" />
+    <Content Include="managerManPages\manageStudents\editStudent.aspx" />
+    <Content Include="managerManPages\manageStudents\showStudents.aspx" />
+    <Content Include="managerManPages\manageTeachers\addTeacher.aspx" />
+    <Content Include="managerManPages\manageTeachers\editTeacher.aspx" />
+    <Content Include="managerManPages\manageTeachers\showTeachers.aspx" />
+    <Content Include="managerManPages\monitorAttendance\advancedSearchAttendance.aspx" />
+    <Content Include="managerManPages\monitorAttendance\attendanceDetail.aspx" />
+    <Content Include="managerManPages\monitorAttendance\averageWeeklyAttendance.aspx" />
+    <Content Include="managerManPages\monitorAttendance\classAttendSearch.aspx" />
+    <Content Include="managerManPages\monitorAttendance\classWeekAttendance.aspx" />
+    <Content Include="managerManPages\monitorAttendance\classWeekAttendSearch.aspx" />
+    <Content Include="managerManPages\monitorAttendance\punishStudent.aspx" />
+    <Content Include="managerManPages\monitorAttendance\punishStudentDetail.aspx" />
+    <Content Include="managerManPages\monitorAttendance\punishStudentShow.aspx" />
+    <Content Include="managerManPages\monitorAttendance\semesterAttendance.aspx" />
+    <Content Include="managerManPages\monitorAttendance\studentAbsence.aspx" />
+    <Content Include="managerManPages\monitorAttendance\viewDetailedAttendanceInformation.aspx" />
+    <Content Include="managerManPages\monitorAttendance\weekDetailedRecords.aspx" />
+    <Content Include="managerManPages\othersMan\checkAttendanceRegister.aspx" />
+    <Content Include="managerManPages\othersMan\compareAttendance.aspx" />
+    <Content Include="managerManPages\othersMan\manageCourseTable.aspx" />
+    <Content Include="managerManPages\teacherAttendance\advancedSearchAttendance.aspx" />
+    <Content Include="managerManPages\teacherAttendance\attendanceDetail.aspx" />
+    <Content Include="managerManPages\teacherAttendance\averageWeeklyAttendance.aspx" />
+    <Content Include="managerManPages\teacherAttendance\classAttendSearch.aspx" />
+    <Content Include="managerManPages\teacherAttendance\classWeekAttendance.aspx" />
+    <Content Include="managerManPages\teacherAttendance\classWeekAttendSearch.aspx" />
+    <Content Include="managerManPages\teacherAttendance\punishStudentDetail.aspx" />
+    <Content Include="managerManPages\teacherAttendance\punishStudentShow.aspx" />
+    <Content Include="managerManPages\teacherAttendance\weekDetailedRecords.aspx" />
+    <Content Include="managerManPages\teacherAttendance\punishStudent.aspx" />
+    <Content Include="managerManPages\teacherAttendance\semesterAttendance.aspx" />
+    <Content Include="managerManPages\teacherAttendance\studentAbsence.aspx" />
+    <Content Include="managerManPages\teacherAttendance\viewDetailedAttendanceInformation.aspx" />
+    <Content Include="monitorManPages\checkByMonitor.aspx" />
+    <Content Include="monitorManPages\checkWorkAttendance.aspx" />
+    <Content Include="monitorManPages\confirmCheckByMonitor.aspx" />
+    <Content Include="monitorManPages\detailedRecords.aspx" />
+    <Content Include="monitorManPages\unCheckinByMonitor.aspx" />
+    <Content Include="monitorManPages\viewAttendance.aspx" />
+    <Content Include="monitorManPages\viewStudentsAttendance.aspx" />
+    <Content Include="studentManPages\detailedRecords.aspx" />
+    <Content Include="studentManPages\search.aspx" />
+    <Content Include="teacherManPages\checkResult.aspx" />
+    <Content Include="teacherManPages\checkWorkAttendance.aspx" />
+    <Content Include="mainPages\index.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="teacherManPages\confirmAttendance.aspx" />
+    <Content Include="teacherManPages\detailedRecords.aspx" />
+    <Content Include="teacherManPages\unCheckin.aspx" />
+    <Content Include="teacherManPages\viewAllRecord.aspx" />
+    <Content Include="teacherManPages\viewAttendance.aspx" />
+    <Content Include="teacherManPages\viewCourseAttendance.aspx" />
+    <Content Include="teacherManPages\viewDetaiAttendance.aspx" />
+    <Content Include="teacherManPages\viewNotnormal.aspx" />
+    <Content Include="teacherManPages\viewStudentsAttendance.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alertPassword.aspx.cs">
+      <DependentUpon>alertPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alertPassword.aspx.designer.cs">
+      <DependentUpon>alertPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\UserManager.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classTeacherManPages\attendanceDetail.aspx.cs">
+      <DependentUpon>attendanceDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classTeacherManPages\attendanceDetail.aspx.designer.cs">
+      <DependentUpon>attendanceDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classTeacherManPages\attendanceStatistics.aspx.cs">
+      <DependentUpon>attendanceStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classTeacherManPages\attendanceStatistics.aspx.designer.cs">
+      <DependentUpon>attendanceStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classTeacherManPages\averageWeeklyAttendance.aspx.cs">
+      <DependentUpon>averageWeeklyAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classTeacherManPages\averageWeeklyAttendance.aspx.designer.cs">
+      <DependentUpon>averageWeeklyAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classTeacherManPages\classStudentAttendDetail.aspx.cs">
+      <DependentUpon>classStudentAttendDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classTeacherManPages\classStudentAttendDetail.aspx.designer.cs">
+      <DependentUpon>classStudentAttendDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classTeacherManPages\classWeekAttendance.aspx.cs">
+      <DependentUpon>classWeekAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classTeacherManPages\classWeekAttendance.aspx.designer.cs">
+      <DependentUpon>classWeekAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classTeacherManPages\viewDetailedAttendanceInformation.aspx.cs">
+      <DependentUpon>viewDetailedAttendanceInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classTeacherManPages\viewDetailedAttendanceInformation.aspx.designer.cs">
+      <DependentUpon>viewDetailedAttendanceInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainPages\welcome.aspx.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainPages\welcome.aspx.designer.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\monitorAttendance\attendanceStatistics.aspx.cs">
+      <DependentUpon>attendanceStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\monitorAttendance\attendanceStatistics.aspx.designer.cs">
+      <DependentUpon>attendanceStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\monitorAttendance\increaseStudentAttendanceRecords.aspx.cs">
+      <DependentUpon>increaseStudentAttendanceRecords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\monitorAttendance\increaseStudentAttendanceRecords.aspx.designer.cs">
+      <DependentUpon>increaseStudentAttendanceRecords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\monitorAttendance\manageAttendanceRecord.aspx.cs">
+      <DependentUpon>manageAttendanceRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\monitorAttendance\manageAttendanceRecord.aspx.designer.cs">
+      <DependentUpon>manageAttendanceRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\monitorAttendance\modifyStudentAttendanceRecord.aspx.cs">
+      <DependentUpon>modifyStudentAttendanceRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\monitorAttendance\modifyStudentAttendanceRecord.aspx.designer.cs">
+      <DependentUpon>modifyStudentAttendanceRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\teacherAttendance\attendanceStatistics.aspx.cs">
+      <DependentUpon>attendanceStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\teacherAttendance\attendanceStatistics.aspx.designer.cs">
+      <DependentUpon>attendanceStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\teacherAttendance\increaseStudentAttendanceRecords.aspx.cs">
+      <DependentUpon>increaseStudentAttendanceRecords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\teacherAttendance\increaseStudentAttendanceRecords.aspx.designer.cs">
+      <DependentUpon>increaseStudentAttendanceRecords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\teacherAttendance\manageAttendanceRecord.aspx.cs">
+      <DependentUpon>manageAttendanceRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\teacherAttendance\manageAttendanceRecord.aspx.designer.cs">
+      <DependentUpon>manageAttendanceRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\teacherAttendance\modifyStudentAttendanceRecord.aspx.cs">
+      <DependentUpon>modifyStudentAttendanceRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaintainStaffManPages\teacherAttendance\modifyStudentAttendanceRecord.aspx.designer.cs">
+      <DependentUpon>modifyStudentAttendanceRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\initAttendance.aspx.cs">
+      <DependentUpon>initAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\initAttendance.aspx.designer.cs">
+      <DependentUpon>initAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\initSemesterDate.aspx.cs">
+      <DependentUpon>initSemesterDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\initSemesterDate.aspx.designer.cs">
+      <DependentUpon>initSemesterDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageClasses\addClass.aspx.cs">
+      <DependentUpon>addClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageClasses\addClass.aspx.designer.cs">
+      <DependentUpon>addClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageClasses\editClass.aspx.cs">
+      <DependentUpon>editClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageClasses\editClass.aspx.designer.cs">
+      <DependentUpon>editClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageClasses\showClasses.aspx.cs">
+      <DependentUpon>showClasses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageClasses\showClasses.aspx.designer.cs">
+      <DependentUpon>showClasses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageCourses\addCourse.aspx.cs">
+      <DependentUpon>addCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageCourses\addCourse.aspx.designer.cs">
+      <DependentUpon>addCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageCourses\editCourse.aspx.cs">
+      <DependentUpon>editCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageCourses\editCourse.aspx.designer.cs">
+      <DependentUpon>editCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageCourses\showCourses.aspx.cs">
+      <DependentUpon>showCourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageCourses\showCourses.aspx.designer.cs">
+      <DependentUpon>showCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageCourseTable\addCourseTable.aspx.cs">
+      <DependentUpon>addCourseTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageCourseTable\addCourseTable.aspx.designer.cs">
+      <DependentUpon>addCourseTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageCourseTable\showDetailCourseTable.aspx.cs">
+      <DependentUpon>showDetailCourseTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageCourseTable\showDetailCourseTable.aspx.designer.cs">
+      <DependentUpon>showDetailCourseTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageCourseTable\editCourseTable.aspx.cs">
+      <DependentUpon>editCourseTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageCourseTable\editCourseTable.aspx.designer.cs">
+      <DependentUpon>editCourseTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageCourseTable\showCourseTable.aspx.cs">
+      <DependentUpon>showCourseTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageCourseTable\showCourseTable.aspx.designer.cs">
+      <DependentUpon>showCourseTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageStaffs\addStaff.aspx.cs">
+      <DependentUpon>addStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageStaffs\addStaff.aspx.designer.cs">
+      <DependentUpon>addStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageStaffs\editStaff.aspx.cs">
+      <DependentUpon>editStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageStaffs\editStaff.aspx.designer.cs">
+      <DependentUpon>editStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageStaffs\showStaffs.aspx.cs">
+      <DependentUpon>showStaffs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageStaffs\showStaffs.aspx.designer.cs">
+      <DependentUpon>showStaffs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageStudents\addStudent.aspx.cs">
+      <DependentUpon>addStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageStudents\addStudent.aspx.designer.cs">
+      <DependentUpon>addStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageStudents\editStudent.aspx.cs">
+      <DependentUpon>editStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageStudents\editStudent.aspx.designer.cs">
+      <DependentUpon>editStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageStudents\showStudents.aspx.cs">
+      <DependentUpon>showStudents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageStudents\showStudents.aspx.designer.cs">
+      <DependentUpon>showStudents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageTeachers\addTeacher.aspx.cs">
+      <DependentUpon>addTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageTeachers\addTeacher.aspx.designer.cs">
+      <DependentUpon>addTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageTeachers\editTeacher.aspx.cs">
+      <DependentUpon>editTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageTeachers\editTeacher.aspx.designer.cs">
+      <DependentUpon>editTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\manageTeachers\showTeachers.aspx.cs">
+      <DependentUpon>showTeachers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\manageTeachers\showTeachers.aspx.designer.cs">
+      <DependentUpon>showTeachers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\advancedSearchAttendance.aspx.cs">
+      <DependentUpon>advancedSearchAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\advancedSearchAttendance.aspx.designer.cs">
+      <DependentUpon>advancedSearchAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\attendanceDetail.aspx.cs">
+      <DependentUpon>attendanceDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\attendanceDetail.aspx.designer.cs">
+      <DependentUpon>attendanceDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\averageWeeklyAttendance.aspx.cs">
+      <DependentUpon>averageWeeklyAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\averageWeeklyAttendance.aspx.designer.cs">
+      <DependentUpon>averageWeeklyAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\classAttendSearch.aspx.cs">
+      <DependentUpon>classAttendSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\classAttendSearch.aspx.designer.cs">
+      <DependentUpon>classAttendSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\classWeekAttendance.aspx.cs">
+      <DependentUpon>classWeekAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\classWeekAttendance.aspx.designer.cs">
+      <DependentUpon>classWeekAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\classWeekAttendSearch.aspx.cs">
+      <DependentUpon>classWeekAttendSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\classWeekAttendSearch.aspx.designer.cs">
+      <DependentUpon>classWeekAttendSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\punishStudent.aspx.cs">
+      <DependentUpon>punishStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\punishStudent.aspx.designer.cs">
+      <DependentUpon>punishStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\punishStudentDetail.aspx.cs">
+      <DependentUpon>punishStudentDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\punishStudentDetail.aspx.designer.cs">
+      <DependentUpon>punishStudentDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\punishStudentShow.aspx.cs">
+      <DependentUpon>punishStudentShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\punishStudentShow.aspx.designer.cs">
+      <DependentUpon>punishStudentShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\semesterAttendance.aspx.cs">
+      <DependentUpon>semesterAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\semesterAttendance.aspx.designer.cs">
+      <DependentUpon>semesterAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\studentAbsence.aspx.cs">
+      <DependentUpon>studentAbsence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\studentAbsence.aspx.designer.cs">
+      <DependentUpon>studentAbsence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\viewDetailedAttendanceInformation.aspx.cs">
+      <DependentUpon>viewDetailedAttendanceInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\viewDetailedAttendanceInformation.aspx.designer.cs">
+      <DependentUpon>viewDetailedAttendanceInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\weekDetailedRecords.aspx.cs">
+      <DependentUpon>weekDetailedRecords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\monitorAttendance\weekDetailedRecords.aspx.designer.cs">
+      <DependentUpon>weekDetailedRecords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\othersMan\checkAttendanceRegister.aspx.cs">
+      <DependentUpon>checkAttendanceRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\othersMan\checkAttendanceRegister.aspx.designer.cs">
+      <DependentUpon>checkAttendanceRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\othersMan\compareAttendance.aspx.cs">
+      <DependentUpon>compareAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\othersMan\compareAttendance.aspx.designer.cs">
+      <DependentUpon>compareAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\othersMan\manageCourseTable.aspx.cs">
+      <DependentUpon>manageCourseTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\othersMan\manageCourseTable.aspx.designer.cs">
+      <DependentUpon>manageCourseTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\advancedSearchAttendance.aspx.cs">
+      <DependentUpon>advancedSearchAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\advancedSearchAttendance.aspx.designer.cs">
+      <DependentUpon>advancedSearchAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\attendanceDetail.aspx.cs">
+      <DependentUpon>attendanceDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\attendanceDetail.aspx.designer.cs">
+      <DependentUpon>attendanceDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\averageWeeklyAttendance.aspx.cs">
+      <DependentUpon>averageWeeklyAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\averageWeeklyAttendance.aspx.designer.cs">
+      <DependentUpon>averageWeeklyAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\classAttendSearch.aspx.cs">
+      <DependentUpon>classAttendSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\classAttendSearch.aspx.designer.cs">
+      <DependentUpon>classAttendSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\classWeekAttendance.aspx.cs">
+      <DependentUpon>classWeekAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\classWeekAttendance.aspx.designer.cs">
+      <DependentUpon>classWeekAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\classWeekAttendSearch.aspx.cs">
+      <DependentUpon>classWeekAttendSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\classWeekAttendSearch.aspx.designer.cs">
+      <DependentUpon>classWeekAttendSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\punishStudentDetail.aspx.cs">
+      <DependentUpon>punishStudentDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\punishStudentDetail.aspx.designer.cs">
+      <DependentUpon>punishStudentDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\punishStudentShow.aspx.cs">
+      <DependentUpon>punishStudentShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\punishStudentShow.aspx.designer.cs">
+      <DependentUpon>punishStudentShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\weekDetailedRecords.aspx.cs">
+      <DependentUpon>weekDetailedRecords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\weekDetailedRecords.aspx.designer.cs">
+      <DependentUpon>weekDetailedRecords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\punishStudent.aspx.cs">
+      <DependentUpon>punishStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\punishStudent.aspx.designer.cs">
+      <DependentUpon>punishStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\semesterAttendance.aspx.cs">
+      <DependentUpon>semesterAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\semesterAttendance.aspx.designer.cs">
+      <DependentUpon>semesterAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\studentAbsence.aspx.cs">
+      <DependentUpon>studentAbsence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\studentAbsence.aspx.designer.cs">
+      <DependentUpon>studentAbsence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\viewDetailedAttendanceInformation.aspx.cs">
+      <DependentUpon>viewDetailedAttendanceInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managerManPages\teacherAttendance\viewDetailedAttendanceInformation.aspx.designer.cs">
+      <DependentUpon>viewDetailedAttendanceInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="monitorManPages\checkByMonitor.aspx.cs">
+      <DependentUpon>checkByMonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="monitorManPages\checkByMonitor.aspx.designer.cs">
+      <DependentUpon>checkByMonitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="monitorManPages\checkWorkAttendance.aspx.cs">
+      <DependentUpon>checkWorkAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="monitorManPages\checkWorkAttendance.aspx.designer.cs">
+      <DependentUpon>checkWorkAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="monitorManPages\confirmCheckByMonitor.aspx.cs">
+      <DependentUpon>confirmCheckByMonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="monitorManPages\confirmCheckByMonitor.aspx.designer.cs">
+      <DependentUpon>confirmCheckByMonitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="monitorManPages\detailedRecords.aspx.cs">
+      <DependentUpon>detailedRecords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="monitorManPages\detailedRecords.aspx.designer.cs">
+      <DependentUpon>detailedRecords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="monitorManPages\unCheckinByMonitor.aspx.cs">
+      <DependentUpon>unCheckinByMonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="monitorManPages\unCheckinByMonitor.aspx.designer.cs">
+      <DependentUpon>unCheckinByMonitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="monitorManPages\viewAttendance.aspx.cs">
+      <DependentUpon>viewAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="monitorManPages\viewAttendance.aspx.designer.cs">
+      <DependentUpon>viewAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="monitorManPages\viewStudentsAttendance.aspx.cs">
+      <DependentUpon>viewStudentsAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="monitorManPages\viewStudentsAttendance.aspx.designer.cs">
+      <DependentUpon>viewStudentsAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="studentManPages\detailedRecords.aspx.cs">
+      <DependentUpon>detailedRecords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="studentManPages\detailedRecords.aspx.designer.cs">
+      <DependentUpon>detailedRecords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="studentManPages\search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="studentManPages\search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherManPages\checkResult.aspx.cs">
+      <DependentUpon>checkResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherManPages\checkResult.aspx.designer.cs">
+      <DependentUpon>checkResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherManPages\checkWorkAttendance.aspx.cs">
+      <DependentUpon>checkWorkAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherManPages\checkWorkAttendance.aspx.designer.cs">
+      <DependentUpon>checkWorkAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainPages\header.Master.cs">
+      <DependentUpon>header.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainPages\header.Master.designer.cs">
+      <DependentUpon>header.Master</DependentUpon>
+    </Compile>
+    <Compile Include="mainPages\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainPages\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainPages\menu.Master.cs">
+      <DependentUpon>menu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainPages\menu.Master.designer.cs">
+      <DependentUpon>menu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="teacherManPages\confirmAttendance.aspx.cs">
+      <DependentUpon>confirmAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherManPages\confirmAttendance.aspx.designer.cs">
+      <DependentUpon>confirmAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherManPages\detailedRecords.aspx.cs">
+      <DependentUpon>detailedRecords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherManPages\detailedRecords.aspx.designer.cs">
+      <DependentUpon>detailedRecords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="teacherManPages\unCheckin.aspx.cs">
+      <DependentUpon>unCheckin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherManPages\unCheckin.aspx.designer.cs">
+      <DependentUpon>unCheckin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherManPages\viewAllRecord.aspx.cs">
+      <DependentUpon>viewAllRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherManPages\viewAllRecord.aspx.designer.cs">
+      <DependentUpon>viewAllRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherManPages\viewAttendance.aspx.cs">
+      <DependentUpon>viewAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherManPages\viewAttendance.aspx.designer.cs">
+      <DependentUpon>viewAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherManPages\viewCourseAttendance.aspx.cs">
+      <DependentUpon>viewCourseAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherManPages\viewCourseAttendance.aspx.designer.cs">
+      <DependentUpon>viewCourseAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherManPages\viewDetaiAttendance.aspx.cs">
+      <DependentUpon>viewDetaiAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherManPages\viewDetaiAttendance.aspx.designer.cs">
+      <DependentUpon>viewDetaiAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherManPages\viewNotnormal.aspx.cs">
+      <DependentUpon>viewNotnormal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherManPages\viewNotnormal.aspx.designer.cs">
+      <DependentUpon>viewNotnormal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacherManPages\viewStudentsAttendance.aspx.cs">
+      <DependentUpon>viewStudentsAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacherManPages\viewStudentsAttendance.aspx.designer.cs">
+      <DependentUpon>viewStudentsAttendance.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{327355B7-30A6-4744-B23B-CF033249144F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{1F644AD7-A5D9-4D6D-8EF8-D6082C19247F}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{A1DBD494-047C-4A1C-876C-30C80C274C00}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{CA7320AF-4B2E-435B-B8E4-93BF4A311B65}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mainPages\header.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mainPages\menu.Master" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9234</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

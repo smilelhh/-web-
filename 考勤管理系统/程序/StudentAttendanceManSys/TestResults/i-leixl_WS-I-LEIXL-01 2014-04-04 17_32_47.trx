@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="20b77e91-1241-4df0-8a1e-c463bb2656ab" name="i-leixl@WS-I-LEIXL-01 2014-04-04 17:32:47" runUser="WICRESOFT\i-leixl" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e3a09f94-687b-4259-b41a-58d72e479efe">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="i-leixl_WS-I-LEIXL-01 2014-04-04 17_32_47">
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\BLL\bin\Debug\BLL.dll" />
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Model\bin\Debug\Model.dll" />
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\DAL\bin\Debug\DAL.dll" />
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Utility\bin\Debug\Utility.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-04-04T17:32:47.8685126+08:00" queuing="2014-04-04T17:32:48.5705171+08:00" start="2014-04-04T17:32:48.6797178+08:00" finish="2014-04-04T17:32:50.0525266+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestSave" storage="d:\360云盘\办公\毕设\学生考勤系统\程序\studentattendancemansys\test\bin\debug\test.dll" id="f6b5fc0b-5f20-9265-3277-e1e82dbed0ee">
+      <Execution id="0cbfd24d-ed8b-4e16-9252-5c0256d8e408" />
+      <TestMethod codeBase="D:/360云盘/办公/毕设/学生考勤系统/程序/StudentAttendanceManSys/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.DALTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestSave" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f6b5fc0b-5f20-9265-3277-e1e82dbed0ee" executionId="0cbfd24d-ed8b-4e16-9252-5c0256d8e408" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0cbfd24d-ed8b-4e16-9252-5c0256d8e408" testId="f6b5fc0b-5f20-9265-3277-e1e82dbed0ee" testName="TestSave" computerName="WS-I-LEIXL-01" duration="00:00:00.8280446" startTime="2014-04-04T17:32:48.7109180+08:00" endTime="2014-04-04T17:32:49.9745261+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0cbfd24d-ed8b-4e16-9252-5c0256d8e408">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Test.DALTest.TestSave threw exception: 
+System.Data.SqlClient.SqlException: 将截断字符串或二进制数据。
+语句已终止。</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Utility.SQLServerDBUtil.execute(String sql, SqlParameter[] sqlParas) in D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Utility\SQLServerDBUtil.cs:line 81
+   at DAL.SQLServerDAL.UserDAL.save(Object obj) in D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\DAL\SQLServerDAL\UserDAL.cs:line 26
+   at Test.DALTest.TestSave() in D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Test\DALTest.cs:line 26
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

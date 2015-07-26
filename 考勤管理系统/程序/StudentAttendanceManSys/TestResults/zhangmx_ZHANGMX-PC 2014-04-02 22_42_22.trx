@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="388e7f0e-0e5e-4029-9f3e-ea72405f0dee" name="zhangmx@ZHANGMX-PC 2014-04-02 22:42:22" runUser="zhangmx-PC\zhangmx" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e3a09f94-687b-4259-b41a-58d72e479efe">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="zhangmx_ZHANGMX-PC 2014-04-02 22_42_22">
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\BLL\bin\Debug\BLL.dll" />
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Model\bin\Debug\Model.dll" />
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\DAL\bin\Debug\DAL.dll" />
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Utility\bin\Debug\Utility.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-04-02T22:42:22.3721382+08:00" queuing="2014-04-02T22:42:22.3941395+08:00" start="2014-04-02T22:42:22.4031400+08:00" finish="2014-04-02T22:42:39.8211362+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestSave" storage="d:\360云盘\办公\毕设\学生考勤系统\程序\studentattendancemansys\test\bin\debug\test.dll" id="f6b5fc0b-5f20-9265-3277-e1e82dbed0ee">
+      <Execution id="de52225b-3c35-4047-9f31-48707306cf7a" />
+      <TestMethod codeBase="D:/360云盘/办公/毕设/学生考勤系统/程序/StudentAttendanceManSys/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.DALTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestSave" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f6b5fc0b-5f20-9265-3277-e1e82dbed0ee" executionId="de52225b-3c35-4047-9f31-48707306cf7a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="de52225b-3c35-4047-9f31-48707306cf7a" testId="f6b5fc0b-5f20-9265-3277-e1e82dbed0ee" testName="TestSave" computerName="ZHANGMX-PC" duration="00:00:17.0569585" startTime="2014-04-02T22:42:22.4071402+08:00" endTime="2014-04-02T22:42:39.7481321+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="de52225b-3c35-4047-9f31-48707306cf7a">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 Test.DALTest.TestSave 引发了异常: 
+System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---&gt; System.ComponentModel.Win32Exception: 找不到网络路径。</Message>
+          <StackTrace> 
+ --- 内部异常堆栈跟踪的末尾 ---
+    在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Utility.SQLServerDBUtil.execute(String sql, SqlParameter[] sqlParas) 位置 D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Utility\SQLServerDBUtil.cs:行号 81
+   在 DAL.SQLServerDAL.UserDAL.save(Object obj) 位置 D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\DAL\SQLServerDAL\UserDAL.cs:行号 27
+   在 Test.DALTest.TestSave() 位置 D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Test\DALTest.cs:行号 25
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,59 @@
+﻿body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    height: auto;
+}
+
+table
+{
+    margin-top: 50px;
+    width: 28%;
+    background-color: #F5FAFD;
+    font-size: 13px;
+    border: solid 2px #D1E1EF;
+    border-collapse: collapse;
+}
+
+.headRow
+{
+    background-color: #389AD0;
+    height: 35px;
+}
+
+.tipRow
+{
+    background-color: #F2F2F2;
+    height: 20px;
+    font-size: 12px;
+}
+
+.infoRow
+{
+    height: 60px;
+    border-bottom: solid 1px #389AD0;
+}
+
+.footRow
+{
+    height: 30px;
+}
+
+.td_left
+{
+    width: 35%;
+}
+
+.textBox
+{
+    width: 100px;
+}
+
+.dropDownList
+{
+    width: 105px;
+}

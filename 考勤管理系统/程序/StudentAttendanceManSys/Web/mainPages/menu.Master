@@ -1,0 +1,385 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/mainPages/header.Master" AutoEventWireup="true"
+    CodeBehind="menu.Master.cs" Inherits="Web.mainPage.menu1" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_head" runat="server">
+    <script src="../js/prototype.lite.js" type="text/javascript"></script>
+    <script src="../js/moo.fx.js" type="text/javascript"></script>
+    <script src="../js/moo.fx.pack.js" type="text/javascript"></script>
+    <link href="../css/menu.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder_head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
+    <div style="float: left; width: 14%;">
+        <div id="type_teacher" style="display: none;">
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">登记考勤</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="../teacherManPages/checkWorkAttendance.aspx" target="frame" onclick="doAction('登记考勤')">
+                            登记考勤</a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">课程考勤查询</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="../teacherManPages/viewAllRecord.aspx" target="frame" onclick="doAction('查看详细记录')">
+                            查看详细记录</a></li>
+                        <li><a href="../teacherManPages/viewDetaiAttendance.aspx" target="frame" onclick="doAction('查看汇总记录')">
+                            查看汇总记录</a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">其它</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="../alertPassword.aspx" target="frame" onclick="doAction('修改密码')">修改密码</a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="type_classTeacher" style="display: none;">
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">班级考勤查询</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="../classTeacherManPages/averageWeeklyAttendance.aspx" target="frame" onclick="doAction('周平均到课率')">周平均到课率</a></li>
+                        <li><a href="../classTeacherManPages/attendanceStatistics.aspx" target="frame" onclick="doAction('出勤统计')">出勤统计</a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">其它</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="../alertPassword.aspx" target="frame" onclick="doAction('修改密码')">修改密码</a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="type_monitor" style="display: none;">
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">登记考勤</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="../monitorManPages/checkWorkAttendance.aspx" target="frame" onclick="doAction('登记考勤')">
+                            登记考勤</a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">班级考勤查询</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="../monitorManPages/viewStudentsAttendance.aspx" target="frame" onclick="doAction('班级考勤查询')">班级考勤查询</a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">其它</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="../alertPassword.aspx" target="frame" onclick="doAction('修改密码')">修改密码</a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="type_student" style="display: none;">
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">出勤情况统计</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="../studentManPages/search.aspx" target="frame" onclick="doAction('出勤情况查询')">出勤情况查询</a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">其它</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="../alertPassword.aspx" target="frame" onclick="doAction('修改密码')">修改密码</a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="type_manager" style="display: none;">
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">系统常规设置</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="../managerManPages/initAttendance.aspx" target="frame" onclick="doAction('出勤记录初始化')">
+                            出勤记录初始化</a></li>
+                        <li><a href="../managerManPages/manageStaffs/showStaffs.aspx" target="frame" onclick="doAction('管理员编辑')">
+                            管理员管理</a></li>
+                        <li><a href="../managerManPages/manageClasses/showClasses.aspx" target="frame" onclick="doAction('班级管理')">
+                            班级管理</a></li>
+                        <li><a href="../managerManPages/manageTeachers/showTeachers.aspx" target="frame"
+                            onclick="doAction('教师管理')">教师管理</a></li>
+                        <li><a href="../managerManPages/manageStudents/showStudents.aspx" target="frame"
+                            onclick="doAction('学生管理')">学生管理</a></li>
+                        <li><a href="../managerManPages/manageCourses/showCourses.aspx" target="frame" onclick="doAction('课程管理')">
+                            课程管理</a></li>
+                        <li><a href="../managerManPages/manageCourseTable/showCourseTable.aspx" target="frame"
+                            onclick="doAction('课程安排')">课程安排</a></li>
+                        <li><a href="../managerManPages/initSemesterDate.aspx" target="frame" onclick="doAction('开学日期初始化')">
+                            开学日期初始化</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">教师登记考勤到课率查询</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="../managerManPages/teacherAttendance/averageWeeklyAttendance.aspx" target="frame"
+                            onclick="doAction('周平均到课率查询')">周平均到课率查询</a></li>
+                        <li><a href="../managerManPages/teacherAttendance/semesterAttendance.aspx" target="frame"
+                            onclick="doAction('各班本学期平均到课率查询')">各班本学期平均到课率查询</a></li>
+                        <li><a href="../managerManPages/teacherAttendance/advancedSearchAttendance.aspx"
+                            target="frame" onclick="doAction('到课率高级查询')">到课率高级查询</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">教师登记考勤查询</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="../managerManPages/teacherAttendance/classWeekAttendSearch.aspx" target="frame"
+                            onclick="doAction('每周出勤统计')">每周出勤统计</a></li>
+                        <li><a href="../managerManPages/teacherAttendance/classAttendSearch.aspx" target="frame"
+                            onclick="doAction('学期出勤统计')">学期出勤统计</a></li>
+                        <li><a href="../managerManPages/teacherAttendance/punishStudent.aspx" target="frame"
+                            onclick="doAction('已达纪律处分学生出勤情况统计')">已达纪律处分学生出勤情况统计</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">班长登记考勤到课率查询</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="../managerManPages/monitorAttendance/averageWeeklyAttendance.aspx" target="frame"
+                            onclick="doAction('周平均到课率查询')">周平均到课率查询</a></li>
+                        <li><a href="../managerManPages/monitorAttendance/semesterAttendance.aspx" target="frame"
+                            onclick="doAction('各班本学期平均到课率查询')">各班本学期平均到课率查询</a></li>
+                        <li><a href="../managerManPages/monitorAttendance/advancedSearchAttendance.aspx"
+                            target="frame" onclick="doAction('到课率高级查询')">到课率高级查询</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">班长登记考勤查询</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="../managerManPages/monitorAttendance/classWeekAttendSearch.aspx" target="frame"
+                            onclick="doAction('每周出勤统计')">每周出勤统计</a></li>
+                        <li><a href="../managerManPages/monitorAttendance/classAttendSearch.aspx" target="frame"
+                            onclick="doAction('学期出勤统计')">学期出勤统计</a></li>
+                        <li><a href="../managerManPages/monitorAttendance/punishStudent.aspx" target="frame"
+                            onclick="doAction('已达纪律处分学生出勤情况统计')">已达纪律处分学生出勤情况统计</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">其他功能</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="../managerManPages/othersMan/checkAttendanceRegister.aspx" target="frame"
+                            onclick="doAction('检查考勤登记完成情况')">检查考勤登记完成情况</a></li>
+                        <li><a href="../managerManPages/othersMan/compareAttendance.aspx" target="frame"
+                            onclick="doAction('班长和教师登记考勤汇总比较')">班长和教师登记考勤汇总比较</a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="../alertPassword.aspx" target="frame" onclick="doAction('修改密码')">修改密码</a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="type_attMaintenance" style="display: none;">
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">教师考勤信息维护</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="../MaintainStaffManPages/teacherAttendance/increaseStudentAttendanceRecords.aspx"
+                            target="frame" onclick="doAction('增加学生考勤记录信息')">增加学生考勤记录信息</a></li>
+                        <li><a href="../MaintainStaffManPages/teacherAttendance/attendanceStatistics.aspx"
+                            target="frame" onclick="doAction('管理学生考勤记录')">管理学生考勤记录</a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">班长考勤信息维护</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="../MaintainStaffManPages/monitorAttendance/increaseStudentAttendanceRecords.aspx"
+                            target="frame" onclick="doAction('增加学生考勤记录信息')">增加学生考勤记录信息</a></li>
+                        <li><a href="../MaintainStaffManPages/monitorAttendance/attendanceStatistics.aspx"
+                            target="frame" onclick="doAction('管理学生考勤记录')">管理学生考勤记录</a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="type">
+                    <a href="javascript:void(0)">其它</a></h1>
+                <div class="content">
+                    <img alt="" src="../images/menu_topline.gif" height="5" />
+                    <ul class="MM">
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="../alertPassword.aspx" target="frame" onclick="doAction('修改密码')">修改密码</a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var contents = document.getElementsByClassName('content');
+            var toggles = document.getElementsByClassName('type');
+
+            var myAccordion = new fx.Accordion(
+            toggles, contents, { opacity: true, duration: 400 }
+             );
+            //            myAccordion.showThisHideOpen(contents[0]);
+
+            var menu = document.getElementById("<%=Type %>");
+            menu.style.display = "block";
+        </script>
+    </div>
+    <div style="float: left; width: 86%;">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="clear">
+    </div>
+</asp:Content>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f281aef1-8d8f-4126-ba38-beaf573ed2b5" name="i-leixl@WS-I-LEIXL-01 2014-04-04 17:25:29" runUser="WICRESOFT\i-leixl" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e3a09f94-687b-4259-b41a-58d72e479efe">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="i-leixl_WS-I-LEIXL-01 2014-04-04 17_25_29">
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\BLL\bin\Debug\BLL.dll" />
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Model\bin\Debug\Model.dll" />
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\DAL\bin\Debug\DAL.dll" />
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Utility\bin\Debug\Utility.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-04-04T17:25:29.3965422+08:00" queuing="2014-04-04T17:25:29.4901446+08:00" start="2014-04-04T17:25:29.5681466+08:00" finish="2014-04-04T17:25:44.6069322+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestSave" storage="d:\360云盘\办公\毕设\学生考勤系统\程序\studentattendancemansys\test\bin\debug\test.dll" id="f6b5fc0b-5f20-9265-3277-e1e82dbed0ee">
+      <Execution id="a5d16782-eff2-49ae-9716-b8a0ab7bd768" />
+      <TestMethod codeBase="D:/360云盘/办公/毕设/学生考勤系统/程序/StudentAttendanceManSys/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.DALTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestSave" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f6b5fc0b-5f20-9265-3277-e1e82dbed0ee" executionId="a5d16782-eff2-49ae-9716-b8a0ab7bd768" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a5d16782-eff2-49ae-9716-b8a0ab7bd768" testId="f6b5fc0b-5f20-9265-3277-e1e82dbed0ee" testName="TestSave" computerName="WS-I-LEIXL-01" duration="00:00:14.6117226" startTime="2014-04-04T17:25:29.6149478+08:00" endTime="2014-04-04T17:25:44.5289302+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5d16782-eff2-49ae-9716-b8a0ab7bd768">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Test.DALTest.TestSave threw exception: 
+System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Utility.SQLServerDBUtil.execute(String sql, SqlParameter[] sqlParas) in D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Utility\SQLServerDBUtil.cs:line 81
+   at DAL.SQLServerDAL.UserDAL.save(Object obj) in D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\DAL\SQLServerDAL\UserDAL.cs:line 26
+   at Test.DALTest.TestSave() in D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Test\DALTest.cs:line 26
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

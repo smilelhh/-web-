@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="header.master.cs" Inherits="Web.mainPage.header1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>主页</title>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder_head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        function logout() {
+            if (confirm("您确定要退出首页界面吗？")) {
+                top.location = "../logout.aspx";
+            }
+            return false;
+        }
+    </script>
+    <link href="../css/header.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="header_content">
+        <div style="float: left;">
+            <img alt="" src="../images/logo.gif" style="height: 36px; width: 260px" />
+        </div>
+        <div class="logout" onclick="logout();">
+            <img src="../images/out.gif" alt="" />
+        </div>
+        <div class="header_txt">
+            [当前用户： <b style="color: Red;">
+                <asp:Label ID="Label_username" runat="server" Text="Label"></asp:Label></b>&nbsp;&nbsp;]：
+            您好,&nbsp;感谢登陆使用考勤管理系统！</div>
+        <div class="clear">
+        </div>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿.header_content
+{
+    background-image: url(../images/top-right.gif);
+    background-repeat: repeat-x;
+    height: 64px;
+}
+
+.header_content .logout
+{
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.header_content .header_txt
+{
+    float: right;
+    margin-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 38px;
+}
+
+.clear
+{
+    clear: both;
+}

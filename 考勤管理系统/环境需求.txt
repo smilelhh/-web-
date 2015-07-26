@@ -1,0 +1,1 @@
+VS2010+sql server2008

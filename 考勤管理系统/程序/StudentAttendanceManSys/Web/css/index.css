@@ -1,0 +1,102 @@
+﻿body
+{
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: #EEF2FB;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container
+{
+    margin-left: 1.5%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #EEF2FB;
+    width: 98.5%;
+    height: 500px;
+    
+}
+
+.index_header_left
+{
+    float: left;
+    width: 1.2%;
+}
+
+.index_header_center
+{
+    float: left;
+    width: 97.7%;
+    height: 29px;
+    background-image: url(../images/content-bg.gif);
+    background-repeat: repeat-x;
+}
+
+.index_header_center .title
+{
+    width:85px;
+    font-size: 10px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+    background-image: url(../images/top_bt.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.index_header_right
+{
+    float: right;
+    width: 1.1%;
+}
+
+.index_content_left
+{
+    float: left;
+    background-image: url(../images/mail_leftbg.gif);
+    background-repeat: repeat-y;
+    width: 1.2%;
+    height: 100%;
+}
+
+.index_content_center
+{
+    float: left;
+    width: 97.7%;
+    height:100%;
+    background-color: #F7F8F9;
+}
+
+.index_content_right
+{
+    float: right;
+    background-image: url(../images/mail_rightbg.gif);
+    background-repeat: repeat-y;
+    width: 1.1%;
+    height: 100%;
+}
+
+.index_footer_left
+{
+    float: left;
+    width: 1.2%;
+}
+
+.index_footer_center
+{
+    float: left;
+    background: url(../images/buttom_bgs.gif);
+    background-repeat: repeat-x;
+    width: 97.7%;
+}
+
+.index_footer_right
+{
+    float: right;
+    width: 1.1%;
+}

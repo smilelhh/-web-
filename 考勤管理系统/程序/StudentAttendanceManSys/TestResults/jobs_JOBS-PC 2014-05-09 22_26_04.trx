@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0b204208-07f1-4615-af45-13340a5e07d4" name="jobs@JOBS-PC 2014-05-09 22:26:04" runUser="jobs-PC\jobs" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e3a09f94-687b-4259-b41a-58d72e479efe">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="jobs_JOBS-PC 2014-05-09 22_26_04">
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\BLL\bin\Debug\BLL.dll" />
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Model\bin\Debug\Model.dll" />
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\DAL\bin\Debug\DAL.dll" />
+      <DeploymentItem filename="D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Utility\bin\Debug\Utility.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-05-09T22:26:04.2176178+08:00" queuing="2014-05-09T22:26:08.1208411+08:00" start="2014-05-09T22:26:08.3668551+08:00" finish="2014-05-09T22:26:10.0869535+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestSave" storage="d:\360云盘\办公\毕设\学生考勤系统\程序\studentattendancemansys\test\bin\debug\test.dll" id="f6b5fc0b-5f20-9265-3277-e1e82dbed0ee">
+      <Execution id="56dd2803-58c8-4638-a93b-0b146f670bca" />
+      <TestMethod codeBase="D:/360云盘/办公/毕设/学生考勤系统/程序/StudentAttendanceManSys/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.DALTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestSave" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f6b5fc0b-5f20-9265-3277-e1e82dbed0ee" executionId="56dd2803-58c8-4638-a93b-0b146f670bca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="56dd2803-58c8-4638-a93b-0b146f670bca" testId="f6b5fc0b-5f20-9265-3277-e1e82dbed0ee" testName="TestSave" computerName="JOBS-PC" duration="00:00:00.7913208" startTime="2014-05-09T22:26:08.4658608+08:00" endTime="2014-05-09T22:26:09.9629464+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="56dd2803-58c8-4638-a93b-0b146f670bca">
+    </UnitTestResult>
+  </Results>
+</TestRun>

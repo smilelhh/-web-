@@ -1,0 +1,17 @@
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Utility\bin\Debug\Utility.dll
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Utility\bin\Debug\Utility.pdb
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Utility\obj\Debug\Utility.dll
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Utility\obj\Debug\Utility.pdb
+D:\360云盘\办公\毕设\学生考勤系统\程序\StudentAttendanceManSys\Utility\obj\Debug\Utility.csproj.ResolveComReference.cache
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Utility\bin\Debug\Utility.dll
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Utility\bin\Debug\Utility.pdb
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Utility\obj\Debug\Utility.csproj.ResolveComReference.cache
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Utility\obj\Debug\Utility.dll
+D:\2014桌面移植过来的\bs\数据库\资料\2014 5 24\程序\StudentAttendanceManSys\Utility\obj\Debug\Utility.pdb
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Utility\bin\Debug\Utility.dll
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Utility\bin\Debug\Utility.pdb
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Utility\obj\Debug\Utility.csproj.ResolveComReference.cache
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Utility\obj\Debug\Utility.dll
+C:\Users\liuhonghua\Desktop\GD\程序\StudentAttendanceManSys\Utility\obj\Debug\Utility.pdb
